@@ -1,0 +1,79 @@
+.flex {
+  display: flex;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.flex-dir {
+  display: flex;
+  flex-direction: column;
+}
+
+.height100 {
+  height: 100%;
+}
+
+.flex-st {
+  justify-content: space-between;
+}
+
+.mt-38 {
+  margin-top: 38px !important;
+}
+
+.mt-18 {
+  margin-top: 18px !important;
+}
+
+.mt-22 {
+  margin-top: 22px !important;
+}
+
+.mt-14 {
+  margin-top: 14px;
+}
+
+.mt-12 {
+  margin-top: 12px;
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.mt-2 {
+  margin-top: 2px;
+}
+
+.mt-4 {
+  margin-top: 4px;
+}
+
+.pl-12 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.fz-32 {
+  font-size: 32px;
+}
+
+.fz-23 {
+  font-size: 20px;
+  opacity: 0.75;
+}
+
+.fz-14 {
+  font-size: 14px;
+  opacity: 0.75;
+}
+
+.width140 {
+  width: 140px;
+}
+
+.in-k {
+  display: inline-block;
+}

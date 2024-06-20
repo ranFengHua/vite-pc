@@ -1,0 +1,19 @@
+//在global.module.scss中引入variables.scss
+@import './variables';
+
+//并暴露出variables.scss里的变量
+:export {
+  white: $white;
+  black: $black;
+  grey: $grey;
+  bg-grey: $bg-grey;
+  greyActive: $greyActive;
+  red: $red;
+  redActive: $redActive;
+  green: $green;
+  greenActive: $greenActive;
+  blue: $blue;
+  blueActive: $blueActive;
+  chartBlue: $chartBlue;
+  chartRed: $chartRed;
+}

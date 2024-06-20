@@ -1,0 +1,36 @@
+// base color
+$white: #fff;
+$black: #181818;
+$grey: #dcdfe6;
+$bg-grey: #f0f1f5;
+$greyActive: #c0c4cc;
+$red: #ff4949;
+$redActive: #f56c6c;
+$green: #13ce66;
+$greenActive: #42d885;
+$blue: #1890ff;
+$blueActive: #46a6ff;
+
+// chart color
+$chartBlue: #3aa0ff;
+$chartRed: #f2637b;
+$chartYellow: #fad337;
+$chartGreen: #4ecb73;
+$chartBrown: #e9a674;
+$chartCyan: #36cbcb;
+
+:export {
+  white: $white;
+  black: $black;
+  grey: $grey;
+  bg-grey: $bg-grey;
+  greyActive: $greyActive;
+  red: $red;
+  redActive: $redActive;
+  green: $green;
+  greenActive: $greenActive;
+  blue: $blue;
+  blueActive: $blueActive;
+  chartBlue: $chartBlue;
+  chartRed: $chartRed;
+}
