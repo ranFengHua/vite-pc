@@ -1,5 +1,6 @@
 //无用哦
 module.exports = {
+    "parser": '@typescript-eslint/parser',
     "env": {
         "browser": true,
         "es2021": true,
@@ -30,8 +31,7 @@ module.exports = {
         "sourceType": "module"
     },
     "plugins": [
-        "@typescript-eslint",
-        "vue"
+        "@typescript-eslint"
     ],
     "rules": {
         "scss/double-slash-comment-whitespace-inside":"off",
