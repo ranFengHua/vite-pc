@@ -24,3 +24,4 @@ dist-ssr
 *.sw?
 center-component-view/*
 center-component-view.zip
+.cache

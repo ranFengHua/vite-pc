@@ -7,10 +7,17 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
+    Authorization: typeof import('./src/components/echarts-example/authorization.vue')['default']
+    CriticalComponents: typeof import('./src/components/echarts-example/critical-components.vue')['default']
+    ElButton: typeof import('element-plus/es')['ElButton']
+    Health: typeof import('./src/components/echarts-example/health.vue')['default']
+    Number: typeof import('./src/components/echarts-example/number.vue')['default']
+    OrganizationAccess: typeof import('./src/components/echarts-example/organization-access.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     SvgIcon: typeof import('./src/components/svgIcon/index.vue')['default']
+    Top: typeof import('./src/components/echarts-example/top.vue')['default']
+    TotalNumber: typeof import('./src/components/echarts-example/total-number.vue')['default']
     VLoading: typeof import('./src/components/v-loading/index.vue')['default']
   }
 }

@@ -8,6 +8,8 @@ import { resolve } from 'path'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+// 导入terser插件进行代码压缩
+import { terser } from 'rollup-plugin-terser'
 // https://vitejs.dev/config/
 export default ({ mode }: ConfigEnv): UserConfig => {
   const { VITE_BASE_URL, VITE_BASE_API } = loadEnv(mode, process.cwd())
@@ -55,6 +57,31 @@ export default ({ mode }: ConfigEnv): UserConfig => {
           // rewrite: (path) => path.replace(/^\/api/, '') //设置路径重写
         }
       }
-    }
+    },
+    build: {
+      // 配置插件
+      rollupOptions: {
+        plugins: [terser()],
+        output: {
+          manualChunks(id) {
+            if (id.includes('node_modules')) {
+              return id.toString().split('node_modules/')[1].split('/')[0].toString()
+            }
+          }
+        }
+      },
+      // 指定目标浏览器版本
+      target: 'es2015',
+      // 开启代码分割
+      chunkSizeWarningLimit: 2000,
+      // 启用/禁用 gzip 压缩
+      brotliSize: true,
+      // 启用/禁用压缩
+      minify: 'terser',
+      // 启用/禁用生产源映射
+      sourcemap: false
+    },
+    // 启用/禁用缓存
+    cacheDir: '.cache'
   }
 }

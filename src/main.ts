@@ -10,7 +10,7 @@ import router from './router/index'
 // 挂载pinia
 import pinia from './store'
 import './assets/common.scss'
-import './style.css'
+import './global.css'
 
 const app = createApp(App)
 app.config.globalProperties.$myMethod = loading()
