@@ -5,7 +5,7 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
     name: 'large-screen',
-    component: () => import('@/views/index/chart-index.vue') // 懒加载组件
+    component: () => import('@/views/index/chart.vue') // 懒加载组件
   }
 ]
 

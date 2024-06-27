@@ -9,8 +9,8 @@
   </div>
 </template>
 <script setup>
-// import { globalProperties } from '@/assets/utils'
-// const global = globalProperties()
-// global.$myMethod.show({ duration: 5000, message: '加载中' })
+import { globalProperties } from '@/assets/utils'
+const global = globalProperties()
+global.$myMethod.show({ duration: 5000, message: '加载中' })
 </script>
 <style lang="scss" scoped></style>
